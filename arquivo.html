@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+
+            .botao {
+                width: 200px;
+                margin: 30px;
+            }
+
+            .margem {
+                margin: 30px;
+            }
+
+            .selecao {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border: solid purple 2px;
+                width: 200px;
+            }
+
+            .SELE2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 10px;
+                gap: 10px;
+            }
+        }
+
+        .display {
+            display: flex;
+
+            gap: 10px;
+        }
+
+        .respost {
+            font-size: 15px;
+            color: blueviolet;
+        }
+
+        .textonumero {
+            width: 50px;
+        }
+
+        .taduindvselec {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .selecao2 {
+            margin: 30px;
+            width: 150px;
+            border: solid purple 2px;
+        }
+
+        .Xi {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="textoExecicio"></p>
+
+
+
+    <button class="botao" id="Livro">Livro: Six of Crows Leigh Bardugo </button>
+
+
+    <div class="margem">
+        <h1>Tabuada</h1>
+        <div class="SELE2">
+            <label for="numero">Digite um número:</label>
+            <div class="display">
+                <input type="number" id="numero" min="1">
+                <button id="calcular" onclick="verificar()">Mostrar Tabuada</button>
+
+            </div>
+            <p id="respost" class="respost"></p>
+            <div class="selecao">
+                <p class="resultado" id="tabu"></p>
+                <p class="resultado" id="tabu2"></p>
+                <p class="resultado" id="tabu3"></p>
+                <p class="resultado" id="tabu4"></p>
+                <p class="resultado" id="tabu5"></p>
+                <p class="resultado" id="tabu6"></p>
+                <p class="resultado" id="tabu7"></p>
+                <p class="resultado" id="tabu8"></p>
+                <p class="resultado" id="tabu9"></p>
+                <p class="resultado" id="tabu10"></p>
+            </div>
+            <div class="taduindvselec">
+                <h1>Tabuada individual</h1>
+                <div class="display">
+                    <input class="textonumero" type="number" id="numero2" min="1">
+                    <h1 class="Xi">X</h1>
+                    <input class="textonumero" type="number" id="numero3" min="1">
+                    <button id="calcular" onclick="verificar2()">Mostrar Tabuada</button>
+
+                </div>
+                <p class="resultado" id="respost2"></p>
+
+                <div class="selecao2">
+                    <p class="resultado" id="tabu11"></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="arquivo.js">
+    </script>
+</body>
+
+</html>
